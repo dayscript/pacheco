@@ -1,0 +1,7 @@
+global:
+  version: VERSION
+  css:
+    base:
+      css/pacheco.css: {}
+  js:
+    js/pacheco.js: {}
