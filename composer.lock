@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4f836801cd5dd126a6eb253f094f72a5",
+    "content-hash": "d29c30ec9aad51ba48052e157cf7c75c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -891,6 +891,99 @@
             }
         },
         {
+            "name": "drupal/block_class",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/block_class.git",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/block_class-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "e16ad58dcaf694e460c2ad581c3eb3c8bd0a095b"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1588263516",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Todd Nienkerk",
+                    "homepage": "https://www.drupal.org/u/todd-nienkerk",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Renato Gonçalves (RenatoG)",
+                    "homepage": "https://www.drupal.org/u/RenatoG",
+                    "email": "renatog@ciandt.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Aaron Stanush",
+                    "homepage": "https://www.drupal.org/u/aaron-stanush",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "David Suissa (DYdave)",
+                    "homepage": "https://www.drupal.org/u/DYdave",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Four Kitchens",
+                    "homepage": "https://www.drupal.org/user/358502",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "berenddeboer",
+                    "homepage": "https://www.drupal.org/u/berenddeboer",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "elliotttf",
+                    "homepage": "https://www.drupal.org/u/elliotttf",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Michal Minecki (mirzu)",
+                    "homepage": "https://www.drupal.org/u/mirzu",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Patrick Coffey (pcoffey)",
+                    "homepage": "https://www.drupal.org/u/pcoffey",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Taylor Smith (tsmith512)",
+                    "homepage": "https://www.drupal.org/u/tsmith512",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Allows assigning classes to Blocks.",
+            "homepage": "https://www.drupal.org/project/block_class",
+            "support": {
+                "source": "https://git.drupalcode.org/project/block_class",
+                "issues": "https://www.drupal.org/project/issues/block_class",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
+            }
+        },
+        {
             "name": "drupal/core",
             "version": "8.9.0",
             "source": {
@@ -1359,6 +1452,66 @@
             }
         },
         {
+            "name": "drupal/menu_block",
+            "version": "1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/menu_block.git",
+                "reference": "8.x-1.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/menu_block-8.x-1.6.zip",
+                "reference": "8.x-1.6",
+                "shasum": "3da96af15c3a5f5f1966e28b6e87b74228617998"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.6",
+                    "datestamp": "1587721600",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "JohnAlbin",
+                    "homepage": "https://www.drupal.org/user/32095"
+                },
+                {
+                    "name": "joelpittet",
+                    "homepage": "https://www.drupal.org/user/160302"
+                },
+                {
+                    "name": "kim.pepper",
+                    "homepage": "https://www.drupal.org/user/370574"
+                },
+                {
+                    "name": "rrrob",
+                    "homepage": "https://www.drupal.org/user/273533"
+                }
+            ],
+            "description": "Provides configurable blocks of menu links.",
+            "homepage": "https://www.drupal.org/project/menu_block",
+            "support": {
+                "source": "https://git.drupalcode.org/project/menu_block"
+            }
+        },
+        {
             "name": "drupal/module_filter",
             "version": "3.1.0",
             "source": {
@@ -1635,12 +1788,12 @@
             "version": "0.9.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/njh/easyrdf.git",
+                "url": "https://github.com/easyrdf/easyrdf.git",
                 "reference": "acd09dfe0555fbcfa254291e433c45fdd4652566"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/njh/easyrdf/zipball/acd09dfe0555fbcfa254291e433c45fdd4652566",
+                "url": "https://api.github.com/repos/easyrdf/easyrdf/zipball/acd09dfe0555fbcfa254291e433c45fdd4652566",
                 "reference": "acd09dfe0555fbcfa254291e433c45fdd4652566",
                 "shasum": ""
             },

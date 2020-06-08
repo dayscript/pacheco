@@ -79,6 +79,13 @@
       {% endif %}
 
       <header class="row" role="banner" aria-label="{{ 'Site header'|t }}">
+        <div id="menu-hamburger">
+          <button class="hamburger hamburger--collapse" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>  
+        </div>
         {% if linked_site_name or linked_logo %}
           <div class="large-2 columns">
             {% if linked_logo %}
@@ -183,28 +190,53 @@
           </div>
         {% endif %}
       </div>
+      
+      {% if page.sub_content %}
+        <div id="sub-content">
+          <section class="{{ sub_content }}">
+            {{ page.sub_content }}
+          </section>
+        </div>
+      {% endif %}
+
+      {% if page.sub_content_first %}
+        <div id="sub-content-first">
+          <section class="{{ sub_content_first }}">
+            {{ page.sub_content_first }}
+          </section>
+        </div>
+      {% endif %}
+
+      {% if page.sub_content_second %}
+        <div id="sub-content-second">
+          <section class="{{ sub_content_second }}">
+            {{ page.sub_content_second }}
+          </section>
+        </div>
+      {% endif %}
+
       {% if page.footer_first or page.footer_middle or page.footer_last %}
-        <footer class="row">
+        <footer id="page-footer" class="row expanded">
           {% if page.footer_first %}
-            <div id="footer-first" class="large-4 columns">
+            <div id="footer-first" class="row">
               {{ page.footer_first }}
             </div>
           {% endif %}
           {% if page.footer_middle %}
-            <div id="footer-middle" class="large-4 columns">
+            <div id="footer-middle" class="row">
               {{ page.footer_middle }}
             </div>
           {% endif %}
           {% if page.footer_last %}
-            <div id="footer-last" class="large-4 columns">
+            <div id="footer-last" class="row">
               {{ page.footer_last }}
             </div>
           {% endif %}
         </footer>
       {% endif %}
-      <div id="mmenu-main" class="hide">
-          {% if page.mmenu_main %}
-              {{ page.mmenu_main }}
+      <div id="full-page-menu" class="hide">
+          {% if page.full_page_menu %}
+              {{ page.full_page_menu }}
           {% endif %}
       </div>
     </div>

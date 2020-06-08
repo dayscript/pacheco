@@ -1,1 +1,23 @@
 // Non-modular or client styles for .l-header region.
+.overflow-hidden{
+	overflow: hidden;
+}
+#full-page-menu{
+	background: #df413a;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 3rem;
+}
+#menu-hamburger.closed-right{
+	right: 6rem;
+	position: absolute;
+	z-index: 1;
+	.hamburger.is-active .hamburger-inner,
+	.hamburger.is-active .hamburger-inner::before,
+	.hamburger.is-active .hamburger-inner::after{
+		background-color: $white;
+	}
+}

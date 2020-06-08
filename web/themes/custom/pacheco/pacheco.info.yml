@@ -11,6 +11,7 @@ base theme: zurb_foundation
 # need to add custom CSS or JS
 libraries:
  - pacheco/global
+ - pacheco/hamburgers
 
 # Regions are output in the page.html.twig
 
@@ -23,12 +24,15 @@ regions:
   page_bottom: 'Page bottom'
   highlighted: Highlighted
   content: Content
+  sub_content: 'Sub Content'
+  sub_content_first: 'Sub Content First'
+  sub_content_second: 'Sub Content Second'
   sidebar_first: 'Left Sidebar'
   sidebar_second: 'Right Sidebar'
   footer_first: 'Footer first column'
   footer_middle: 'Footer middle column'
   footer_last: 'Footer last column'
-  mmenu_main: 'Mmenu main'
+  full_page_menu: 'Full Page Menu'
   left_off_canvas: 'Left off canvas'
   right_off_canvas: 'Right off canvas'
 regions_hidden:

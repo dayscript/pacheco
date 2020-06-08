@@ -5,3 +5,8 @@ global:
       css/pacheco.css: {}
   js:
     js/pacheco.js: {}
+hamburgers:
+  version: VERSION
+  css:
+    base:
+      libraries/hamburgers/dist/hamburgers.css: {}
