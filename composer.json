@@ -12,6 +12,18 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "sachinchoolur/lightgallery",
+                "type": "drupal-library",
+                "version": "1.2.21",
+                "dist": {
+                    "url": "https://github.com/sachinchoolur/lightGallery/archive/1.2.21.zip",
+                    "type": "zip"
+                }
+            }
         }
     ],
     "require": {
@@ -24,11 +36,15 @@
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
         "drupal/field_group": "3.0",
+        "drupal/fontyourface": "^3.2",
+        "drupal/lightgallery": "^1.1",
         "drupal/module_filter": "^3.1",
         "drupal/pathauto": "1.6",
         "drupal/photoswipe": "^2.9",
         "drupal/responsive_menu": "^4.1",
-        "drupal/zurb_foundation": "^6.0"
+        "drupal/views_slideshow": "^4.7",
+        "drupal/zurb_foundation": "^6.0",
+        "sachinchoolur/lightgallery": "^1.2"
     },
     "conflict": {
         "drupal/drupal": "*"
