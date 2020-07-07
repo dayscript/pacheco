@@ -7,9 +7,138 @@
 
 // Headings
 //------------------------------------------
-// h1, h2, h3,
-// h4, h5, h6 {}
+h1, h2, h3,
+h4, h5, h6 {
+    font-weight: 700;
+}
+p, body{
+font-size: 14px;
+}
+.p-block{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 0;
+    padding-right: 0;
+    @media screen and (max-width: 600px){
+        padding-top: 1rem;
+    padding-bottom: 1rem;
+    }
+}
+h2.block-title {
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+    margin-bottom: 2rem;
+}
+ul.js-pager__items.pager {
+    margin-left: 0;
+    list-style-type: none;
+    text-align: center;
+    a.button {
+        display: inline-block;
+        width: auto;
+        padding-left: 0.9rem;
+        text-transform: uppercase;
+        padding-left: 0;
+        font-weight: 600;
+        text-transform: uppercase;
+        position: relative;
+        padding-right: 1.2rem;
+        font-size: 0.8rem;
+        color: $black;
+        background-color: transparent;
+        &:after{
+            position: absolute;
+            content: "";
+            width: 12px;
+            height: 12px;
+            right: 0;
+            bottom: 11px;
+            background-image: url(../images/arrow.png);
+            margin-left: 0.5rem;
+        }
+    }
+}
+.ckeditor-readmore-wrapper {
+    text-align: center;
+}
+a.ckeditor-readmore-toggler{
+    display: inline-block;
+    width: auto;
+    padding-left: 0.9rem;
+    text-transform: uppercase;
+    padding-left: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    padding-right: 1.2rem;
+    font-size: 0.8rem;
+    color: $black;
+    background-color: transparent;
+    &:after{
+        position: absolute;
+        content: "";
+        width: 12px;
+        height: 12px;
+        right: 0;
+        bottom: 7px;
+        background-image: url(../images/arrow.png);
+        margin-left: 0.5rem;
+    }
+}
 
+.more{
+    display: block;
+    width: 100%;
+    padding-left: 0.9rem;
+    margin-top: 1rem;
+    padding-left: 0;
+    a{
+        font-weight: 600;
+        text-transform: uppercase;
+        position: relative;
+        padding-right: 1.2rem;
+        &:after{
+            position: absolute;
+            content: "";
+            width: 12px;
+            height: 12px;
+            right: 0;
+            bottom: 3px;
+            background-image: url(../images/arrow.png);
+            margin-left: 0.5rem;
+        }
+    }
+}
+.more-link {
+    display: block;
+    width: 100%;
+    padding-left: 0.9rem;
+    margin-top: 1rem;
+    padding-left: 1rem;
+    a{
+        font-weight: 600;
+        text-transform: uppercase;
+        position: relative;
+        padding-right: 1.2rem;
+        &:after{
+            position: absolute;
+            content: "";
+            width: 12px;
+            height: 12px;
+            right: 0;
+            bottom: 3px;
+            background-image: url(../images/arrow.png);
+            margin-left: 0.5rem;
+        }
+    }
+}
+.derecha {
+    text-align: right;
+    @media screen and (max-width: 600px){
+        text-align: left;
+    margin-bottom: 2rem;
+    }
+}
 // Anchors
 //-----------------------------------------------------------------------------
 // a {}

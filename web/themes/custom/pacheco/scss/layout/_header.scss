@@ -3,21 +3,93 @@
 	overflow: hidden;
 }
 #full-page-menu{
-	background: #df413a;
+	background: $secondary-color;
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 	padding: 3rem;
+	z-index: 1;
+	nav#block-navegacionprincipal {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		ul.menu.dropdown{
+			li{
+				display: block;
+				width: 100%;
+				a{
+					color: #fefefe;
+					font-size: 3rem;
+					font-weight: 400;
+					padding: 0.4rem 0;
+					display: inline-block;
+				}
+			}
+		}
+	}
+	nav#block-redes {
+		position: absolute;
+		bottom: 10%;
+		a{
+			padding: 0 1rem 0 0;
+		}
+	}
+	a{
+		color: $white;
+	}
 }
 #menu-hamburger.closed-right{
-	right: 6rem;
+	right: 2rem;
+    top: 2rem;
 	position: absolute;
-	z-index: 1;
+	z-index: 2;
 	.hamburger.is-active .hamburger-inner,
 	.hamburger.is-active .hamburger-inner::before,
 	.hamburger.is-active .hamburger-inner::after{
 		background-color: $white;
+	}
+}
+div#menu-hamburger {
+    display: inline-block;
+	float: left;
+	position: fixed;
+}
+.header {
+	padding: 1rem 0;
+	section#block-marcadelsitio {
+		max-width: 10rem;
+		@media screen and (max-width: 600px){
+			margin-left: 40%;
+		}
+	}
+}
+//Slide
+
+.container-photo {
+	position: relative;
+	.info {
+		position: absolute;
+		bottom: 2rem;
+		right: 2rem;
+		color: $white;
+		z-index: 1;
+		h2{
+			font-size: 1.2rem;
+			margin-bottom: 0;
+		}
+	}
+	.slide {
+		position: relative;
+		&:after{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.3);
+			content: "";
+		}
 	}
 }

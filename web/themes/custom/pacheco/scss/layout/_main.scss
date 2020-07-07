@@ -1,1 +1,30 @@
-// Non-modular or client styles for the .l-content region.
+.l-main {
+    padding-left: 4.5rem;
+    @media screen and (max-width: 600px) {
+        padding-left: 1rem;
+    }
+}
+ div#sub-content-second  {
+    padding-left: 6.2rem;
+    @media screen and (max-width: 600px) {
+        padding-left: 1rem;
+    }
+}
+div#footer-first {
+    padding-left: 3.2rem;
+    @media screen and (max-width: 600px) {
+        padding-left: 1rem;
+    }
+}
+.row.web {
+    padding-left: 3.2rem;
+    @media screen and (max-width: 600px) {
+        padding-left: 1rem;
+    }
+}
+section#block-mapacontacto {
+    padding-left: 3.2rem;
+    @media screen and (max-width: 600px) {
+        padding-left: 1rem;
+    }
+}

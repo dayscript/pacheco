@@ -78,14 +78,8 @@
         {% endif %}
       {% endif %}
 
-      <header class="row" role="banner" aria-label="{{ 'Site header'|t }}">
-        <div id="menu-hamburger">
-          <button class="hamburger hamburger--collapse" type="button">
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
-            </span>
-          </button>  
-        </div>
+      <header class="" role="banner" aria-label="{{ 'Site header'|t }}">
+
         {% if linked_site_name or linked_logo %}
           <div class="large-2 columns">
             {% if linked_logo %}
@@ -101,7 +95,14 @@
           </div>
         {% endif %}
         {% if page.header %}
-          <div class="large-12 columns">
+          <div class="header row columns">
+            <div id="menu-hamburger">
+              <button class="hamburger hamburger--collapse" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>  
+            </div>
             {{ page.header }}
           </div>
         {% endif %}
@@ -159,14 +160,15 @@
       {% endif %}
 
       {% if page.main %}
-      <div class="l-main">
+      <div class="l-main row columns">
         <div>
           {{ page.main }}
+
         </div>
       </div>
       {% endif %}
 
-      <div class="row">
+      <div class="row web">
         {% if page.sidebar_first %}
           <div id="sidebar-first" class="{{ sidebar_first_grid }} columns sidebar ">
             {{ page.sidebar_first }}
@@ -190,7 +192,7 @@
           </div>
         {% endif %}
       </div>
-      
+      <div class="row">
       {% if page.sub_content %}
         <div id="sub-content">
           <section class="{{ sub_content }}">
@@ -198,7 +200,7 @@
           </section>
         </div>
       {% endif %}
-
+    </div>
       {% if page.sub_content_first %}
         <div id="sub-content-first">
           <section class="{{ sub_content_first }}">
@@ -209,31 +211,35 @@
 
       {% if page.sub_content_second %}
         <div id="sub-content-second">
-          <section class="{{ sub_content_second }}">
+          <section class="row">
             {{ page.sub_content_second }}
           </section>
         </div>
       {% endif %}
 
-      {% if page.footer_first or page.footer_middle or page.footer_last %}
-        <footer id="page-footer" class="row expanded">
-          {% if page.footer_first %}
-            <div id="footer-first" class="row">
-              {{ page.footer_first }}
-            </div>
-          {% endif %}
-          {% if page.footer_middle %}
-            <div id="footer-middle" class="row">
-              {{ page.footer_middle }}
-            </div>
-          {% endif %}
-          {% if page.footer_last %}
-            <div id="footer-last" class="row">
-              {{ page.footer_last }}
-            </div>
-          {% endif %}
-        </footer>
-      {% endif %}
+
+  {% if page.footer_first or page.footer_middle or page.footer_last %}
+  <footer id="page-footer" class="columns">
+   <div class="row">
+    {% if page.footer_first %}
+    <div id="footer-first" class="medium-4 columns">
+      {{ page.footer_first }}
+    </div>
+  {% endif %}
+  {% if page.footer_middle %} 
+    <div id="footer-middle" class="medium-4 columns">
+      {{ page.footer_middle }}
+    </div>
+  {% endif %}
+  {% if page.footer_last %}
+    <div id="footer-last" class="medium-4 columns">
+      {{ page.footer_last }}
+    </div>
+  {% endif %}
+   </div>
+  </footer>
+{% endif %} 
+
       <div id="full-page-menu" class="hide">
           {% if page.full_page_menu %}
               {{ page.full_page_menu }}

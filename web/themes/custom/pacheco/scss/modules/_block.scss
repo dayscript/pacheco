@@ -1,0 +1,227 @@
+section#block-views-block-noticias-block-1, section#block-views-block-noticias-block-1-2 {
+    .views-row {
+        min-height: 11rem;
+        @media screen and (max-width: 600px) {
+            min-height: auto;
+        }
+    }
+}
+
+.banner{
+    position: relative;
+        display: flex;
+        align-items: flex-end;
+        justify-content: right;
+    div#custom-dots {
+        width: 20%;
+        ul{
+            list-style: none;
+            margin-right: 1rem;
+            padding-bottom: 0.5rem;
+            margin-left: 0;
+            li{
+                padding: 0.4rem 0 0 0;
+                width: 10px;
+                text-align: center;
+            }
+            li.slick-active {
+                border-bottom: 4px solid;
+            }
+        }
+    }
+    div#slick-views-slide-block-1-1 {
+        width: 80%;
+    }
+}
+.container-section {
+    position: relative;
+    width: 100%;
+    float: right;
+    display: flex;
+    align-items: flex-end;
+    @media screen and (max-width: 600px){
+        display: block;
+    }
+    .container-info {
+        position: absolute;
+        bottom: 0;
+        padding-right: 1rem;
+        @media screen and (max-width: 600px) {
+            margin-bottom: 2rem;
+            position: relative;
+        }
+    }
+} 
+
+//filtros
+.filtros{
+    fieldset {
+        margin-bottom: 2rem;
+    }
+    span.fieldset-legend {
+        font-weight: 700;
+        font-size: 1.1rem;
+    }
+}
+.section-proyectos{
+    #block-pacheco-breadcrumbs, #block-pacheco-page-title {
+    margin-left: 16.6667%;
+        @media screen and (max-width: 600px){
+            margin-left: 0;
+        }
+    } 
+} 
+
+.listados{
+    .columns {
+        padding-right: 1.8rem;
+        padding-left: 0;
+    }
+}
+div#slick-views-proyectos-block-1-2-slider{
+    .slick-slide {
+        padding-right: 1rem;
+    padding-left: 1rem;
+    }
+
+}
+section#block-views-block-proyectos-block-1{
+    ul.slick-dots{
+            list-style: none;
+            padding-bottom: 0.5rem;
+            li{
+                padding: 0.4rem 0 0 0;
+                width: 10px;
+                text-align: center;
+                display: inline-block;
+    margin-right: 0.9rem;
+            }
+            li.slick-active {
+                border-bottom: 4px solid;
+            }
+        }
+    
+}
+
+section#block-views-block-nuestras-oficinas-block-1 {
+
+header {
+    float: right;
+    display: inline-block;
+    width: 35%;
+    margin-left: 1rem;
+    @media screen and (max-width: 600px){
+        margin-left: auto;
+    }
+}
+.slick-slide {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+ul.slick-dots{
+    list-style: none;
+    padding-bottom: 0.5rem;
+    li{
+        padding: 0.4rem 0 0 0;
+        width: 10px;
+        text-align: center;
+        display: inline-block;
+margin-right: 0.9rem;
+    }
+    li.slick-active {
+        border-bottom: 4px solid;
+    }
+}
+}
+
+.mapa{
+    iframe { 
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        filter: grayscale(100%);
+        filter: gray; /* IE 6-9 */
+   }
+}
+//project
+.container-project {
+    position: relative;
+    .project {
+        position: relative;
+        margin-bottom: 2rem;
+        &:after{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            transition: ease all 0.4s;
+            content: "";
+        }
+        &:hover{
+            cursor: pointer;
+            &:after{
+                background: rgba(0, 0, 0, 0.6);
+                transition: ease all 0.4s; 
+            }
+        }
+    }
+    .info {
+        position: absolute;
+        z-index: 1;
+        bottom: 1rem;
+        right: 1rem;
+        text-align: right;
+        color: $white;
+        .locate {
+            text-transform: uppercase;
+            font-size: 0.6rem;
+        }
+        h2 {
+            font-size: 1.1rem;
+            margin-bottom: 0;
+            a{
+                color: $white; 
+            }
+        }
+    }
+}
+
+//Estudio
+
+.section-el-estudio, .section-nuestra-aproximacion, .section-academia, .section-contacto{
+    main#main {
+        padding: 0 14rem;
+        
+        @media screen and (max-width: 600px){
+            padding: 0;
+        }
+    }
+    section#block-pacheco-breadcrumbs, section#block-pacheco-page-title {
+        padding: 0 13rem;
+        @media screen and (max-width: 600px){
+            padding: 0;
+        }
+    } 
+    &.path-el-estudio{
+        main#main {
+            padding: 0rem;
+        }
+    }
+}
+
+nav#block-redes-3{
+        a{
+            padding: 0.7rem 1rem 0.7rem 0;
+            font-size: 0.8rem;
+        }
+    }
+
+    section#block-informacion-2 {
+        a {
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+    }
