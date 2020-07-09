@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "48c5abdde01b5a347cdf169346649195",
+    "content-hash": "0e4b6962e4347ae8ed769b053cc9301c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2010,6 +2010,50 @@
             }
         },
         {
+            "name": "drupal/image_slider",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/image_slider.git",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/image_slider-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "41c586dd0917c6bba0a4bbeebf98a614131fca4b"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1587984142",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "arunkumarkit",
+                    "homepage": "https://www.drupal.org/user/3523362"
+                }
+            ],
+            "description": "We can use this module to generate different type of slider.",
+            "homepage": "https://www.drupal.org/project/image_slider",
+            "support": {
+                "source": "https://git.drupalcode.org/project/image_slider"
+            }
+        },
+        {
             "name": "drupal/lightgallery",
             "version": "1.1.0",
             "source": {
@@ -2676,6 +2720,55 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/slick",
                 "issues": "https://drupal.org/project/issues/slick"
+            }
+        },
+        {
+            "name": "drupal/slick_extras",
+            "version": "1.0.0-rc3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/slick_extras.git",
+                "reference": "8.x-1.0-rc3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/slick_extras-8.x-1.0-rc3.zip",
+                "reference": "8.x-1.0-rc3",
+                "shasum": "fffc6acc5508235292e754b32006ec7d2ddd2a76"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/slick": "*"
+            },
+            "require-dev": {
+                "drupal/slick": "*",
+                "drupal/slick_views": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-rc3",
+                    "datestamp": "1581745147",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "gausarts",
+                    "homepage": "https://www.drupal.org/user/159062"
+                }
+            ],
+            "description": "Provides Slick carousel extras.",
+            "homepage": "https://www.drupal.org/project/slick_extras",
+            "support": {
+                "source": "https://git.drupalcode.org/project/slick_extras"
             }
         },
         {
@@ -5871,7 +5964,8 @@
         "drupal/ckeditor_readmore": 20,
         "drupal/ng_lightbox": 10,
         "drupal/owlcarousel": 15,
-        "drupal/quicktabs": 15
+        "drupal/quicktabs": 15,
+        "drupal/slick_extras": 5
     },
     "prefer-stable": true,
     "prefer-lowest": false,

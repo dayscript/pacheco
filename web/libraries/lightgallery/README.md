@@ -1,6 +1,7 @@
 ![travis](https://travis-ci.org/sachinchoolur/lightGallery.svg?branch=master)
 ![bower](https://img.shields.io/bower/v/lightgallery.svg)
 ![npm](https://img.shields.io/npm/v/lightgallery.svg)
+[![](https://data.jsdelivr.com/v1/package/npm/lightgallery/badge)](https://www.jsdelivr.com/package/npm/lightgallery)
 
 # lightGallery
 A customizable, modular, responsive, lightbox gallery plugin for jQuery.
@@ -18,6 +19,7 @@ Main features
 * Mouse drag supports for desktops.
 * Double-click/Double-tap to see actual size of the image.
 * Animated thumbnails.
+* Social sharing.
 * Youtube Vimeo Dailymotion VK and html5 videos Support.
 * 20+ Hardware-Accelerated CSS3 transitions.
 * Dynamic mode.
@@ -35,17 +37,21 @@ Main features
  
 Browser support
 ---
-lightgallery supports all major browsers including IE 8 and above..
+lightgallery supports all major browsers including IE 8 and above.
 
 
 Installation
 ---
 #### Install with Bower
 
-You can install ```lightgallery``` using the [Bower](http://bower.io) package manager.
+You can Install  ```lightgallery``` and its modules using the [Bower](http://bower.io) package manager.
 
 ```sh
 $ bower install lightgallery --save
+```
+Or Install all modules together
+``` sh
+$ bower install lightgallery lg-thumbnail lg-autoplay lg-video lg-fullscreen lg-pager lg-zoom lg-hash lg-share
 ```
 
 #### npm
@@ -53,15 +59,16 @@ $ bower install lightgallery --save
 You can also find ```lightgallery``` on [npm](http://npmjs.org).
 
 ```sh
-$ npm install lightgallery
+$ npm install lightgallery lg-thumbnail lg-autoplay lg-video lg-fullscreen lg-pager lg-zoom lg-hash lg-share
 ```
 #### Download from Github
 
 You can also directly download lightgallery from github.
 
-#### Cdnjs
+#### CDN
+If you prefer to use a CDN you can load files via [jsdelivr](https://www.jsdelivr.com/projects/lightgallery) or [cdnjs](https://cdnjs.com/libraries/lightgallery)
 
-If you prefer to use a CDN you can load files via [cdnjs](https://cdnjs.com/libraries/lightgallery)
+Here is the [jsdelivr collection](https://cdn.jsdelivr.net/combine/npm/lightgallery,npm/lg-autoplay,npm/lg-fullscreen,npm/lg-hash,npm/lg-pager,npm/lg-share,npm/lg-thumbnail,npm/lg-video,npm/lg-zoom) of lightGallery and its modules.
 
 #### Include CSS and Javascript files
 First of all add lightgallery.css in the &lt;head&gt; of the document.
@@ -72,6 +79,7 @@ First of all add lightgallery.css in the &lt;head&gt; of the document.
 ```
 Then include jQuery and lightgallery.min.js into your document.
 If you want to include any lightgallery plugin you can include it after lightgallery.min.js.
+lightGallery and it's plugins are available in lightgallery-all.js
 ``` html
 <body>
     ....
@@ -82,13 +90,24 @@ If you want to include any lightgallery plugin you can include it after lightgal
     <!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
 
+    <script src="js/lightgallery.min.js"></script>
+
     <!-- lightgallery plugins -->
     <script src="js/lg-thumbnail.min.js"></script>
     <script src="js/lg-fullscreen.min.js"></script>
 </body>  
 ```
-##### The markup
-lightgallery does not force you to use any kind of markup. you can use whatever markup you want. But i suggest you to use the following markup. [Here](http://sachinchoolur.github.io/lightGallery/demos/html-markup.html) you can find the detailed examples of deferent kind of markups.
+lightGallery also supports AMD, CommonJS and ES6 modules.
+When you use AMD make sure that lightgallery.js is loaded before lightgallery modules.
+```js
+require(['./lightgallery.js'], function() {
+    require(["./lg-zoom.js", "./lg-thumbnail.js"], function(){
+        $("#lightgallery").lightGallery(); 
+    });
+});
+```
+#### The markup
+lightgallery does not force you to use any kind of markup. you can use whatever markup you want. But I suggest you to use the following markup. [Here](http://sachinchoolur.github.io/lightGallery/demos/html-markup.html) you can find the detailed examples of different kind of markups.
 ``` html
 <div id="lightgallery">
   <a href="img/img1.jpg">
@@ -109,14 +128,6 @@ Finally you need to initiate the gallery by adding the following code.
     });
 </script>
 ```
-
-#### Support lightgallery
-If you like lightgallery please support the project by staring the repository or <a href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fabout.twitter.com%2Fresources%2Fbuttons&ref_src=twsrc%5Etfw&text=lightGallery%20-%20The%20complete%20%23jQuery%20lightbox%20gallery%20plugin.%20%23javascript&tw_p=tweetbutton&url=http%3A%2F%2Fsachinchoolur.github.io%2FlightGallery%2F" target="_blank">tweet</a> about this project.
-
-Need collaborators 
----
-If anyone is interested in becoming a collaborator please drop me an email at sachi77n@gmail.com.
-I have been quite busy lately. Unable to reply to all support and customization requests. Any assistance with this project would be greatly appreciated.
 
 Resources
 ----
@@ -158,41 +169,26 @@ Demos
 * [History/hash plugin](http://sachinchoolur.github.io/lightGallery/demos/hash.html)
 * [Angularjs directive](http://sachinchoolur.github.io/lightGallery/demos/angularjs.html)
 
-Built in modules
+Modules
 ----
-1. [Thumbnail](http://sachinchoolur.github.io/lightGallery/docs/api.html#lg-thumbnial)
-2. [Autoplay](http://sachinchoolur.github.io/lightGallery/docs/api.html#lg-autoplay)
-3. [Video](http://sachinchoolur.github.io/lightGallery/docs/api.html#lg-video)
-4. [Fullscreen](http://sachinchoolur.github.io/lightGallery/docs/api.html#lg-fullscreen)
-4. [Pager](http://sachinchoolur.github.io/lightGallery/docs/api.html#lg-pager)
-4. [Zoom](http://sachinchoolur.github.io/lightGallery/docs/api.html#lg-zoom)
-4. [Hash](http://sachinchoolur.github.io/lightGallery/docs/api.html#lg-hash)
+1. Thumbnail - [GItHub](https://github.com/sachinchoolur/lg-thumbnail) - [Docs](https://sachinchoolur.github.io/lightGallery/docs/api.html#lg-thumbnial)
+2. Autoplay - [GItHub](https://github.com/sachinchoolur/lg-autoplay) - [Docs](https://sachinchoolur.github.io/lightGallery/docs/api.html#lg-autoplay)
+3. Video - [GItHub](https://github.com/sachinchoolur/lg-video) - [Docs](https://sachinchoolur.github.io/lightGallery/docs/api.html#lg-video)
+4. Fullscreen - [GItHub](https://github.com/sachinchoolur/lg-fullscreen) - [Docs](https://sachinchoolur.github.io/lightGallery/docs/api.html#lg-fullscreen)
+5. Pager - [GItHub](https://github.com/sachinchoolur/lg-pager) - [Docs](https://sachinchoolur.github.io/lightGallery/docs/api.html#lg-pager)
+6. Zoom - [GItHub](https://github.com/sachinchoolur/lg-zoom) - [Docs](https://sachinchoolur.github.io/lightGallery/docs/api.html#lg-zoom)
+7. Hash - [GItHub](https://github.com/sachinchoolur/lg-hash) - [Docs](https://sachinchoolur.github.io/lightGallery/docs/api.html#lg-hash)
+8. Share - [GItHub](https://github.com/sachinchoolur/lg-share) - [Docs](https://sachinchoolur.github.io/lightGallery/docs/api.html#lg-share)
 
-Support
-----
-Please use GitHub [issue tracker](https://github.com/sachinchoolur/lightGallery/issues/new) in the event that you have come across a bug or glitch. It would also be very helpful if you could add a jsFiddle, which would allow you to demonstrate the problem in question.
+9. exif - [GitHub](https://github.com/amcolash/lg-exif) - Author - [Andrew McOlash
+](https://github.com/amcolash)
 
-You can post a comment [here](http://sachinchoolur.github.io/lightGallery/#comments) to leave feedback, and offer any feature suggestions you may have for Lightgallery.
+License
+---
 
-Please use [stackoverflow](https://stackoverflow.com/search?q=lightgallery) instead of github issue tracker if you need any help with implementing lightgallery in your project or if you have any personal support requests. **If you need any special customization, feature or support email me at _sachi77n@gmail.com_. I can do it for reasonable price.**
+#### Commercial license
+If you want to use lightGallery to develop commercial sites, themes, projects, and applications, the Commercial license is the appropriate license. With this option, your source code is kept proprietary. Purchase a lightGallery Commercial License at [uplabs.com/posts/lightgallery-plugin](https://www.uplabs.com/posts/lightgallery-plugin)
 
-Do you like lightgallery? You can support the project by staring the github repository or [tweet](https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fabout.twitter.com%2Fresources%2Fbuttons&ref_src=twsrc%5Etfw&text=lightGallery%20-%20The%20complete%20%23jQuery%20lightbox%20gallery%20plugin.%20%23javascript&tw_p=tweetbutton&url=http%3A%2F%2Fsachinchoolur.github.io%2FlightGallery%2F) about this project.
+#### Open source license
 
-Follow me on twitter [@sachinchoolur](https://twitter.com/sachinchoolur) for the latest news, updates about this project.
-
-Other Projects
-----
-#####[jQuery lightslider](https://github.com/sachinchoolur/lightslider)
-> lightSlider is a lightweight responsive Content slider with carousel thumbnails navigation.
-
-#####[Angular flash](https://github.com/sachinchoolur/angular-flash)
-> A simple lightweight flash message module for angularjs
-
-#####[ladda-angular](https://github.com/sachinchoolur/ladda-angular)
-> Ladda button directive for angularjs
-
-#####[Teamwave](http://www.teamwave.com/?kid=676V2)
-> Integrated Suite of Business Applications.. (Not an open source project but free for the first 1,000 Companies!)
-
-
-
+If you are creating an open source application under a license compatible with the GNU GPL license v3, you may use this project under the terms of the GPLv3.

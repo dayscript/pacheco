@@ -38,6 +38,7 @@
         "drupal/field_formatter_class": "^1.4",
         "drupal/field_group": "3.0",
         "drupal/fontyourface": "^3.2",
+        "drupal/image_slider": "^1.2",
         "drupal/lightgallery": "^1.1",
         "drupal/module_filter": "^3.1",
         "drupal/ng_lightbox": "^1.0@beta",
@@ -47,6 +48,7 @@
         "drupal/photoswipe": "^2.9",
         "drupal/quicktabs": "^3.0@alpha",
         "drupal/responsive_menu": "^4.1",
+        "drupal/slick_extras": "^1.0@RC",
         "drupal/views_slideshow": "^4.7",
         "drupal/zurb_foundation": "^6.0",
         "sachinchoolur/lightgallery": "^1.2"

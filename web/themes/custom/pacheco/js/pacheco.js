@@ -16,6 +16,18 @@
       	$('#menu-hamburger').toggleClass('closed-right')
       	$('#full-page-menu').toggleClass('hide')
       });
+
+      //lightGallery(document.getElementById('lightgallery'));
+
+/*$("#magic_start").click(function(e) {
+  e.preventDefault();
+  $(".lightgallery a > img").trigger("click");
+});*/
+
+      $('#magic_start, .field-name-field-image img', context).once('pacheco').on('click',function(e){
+        e.preventDefault();
+        $(".lightgallery a > img").first().trigger("click");
+      });
     }
   };
 
