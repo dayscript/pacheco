@@ -126,7 +126,7 @@ ul.slick-dots{
         width: 10px;
         text-align: center;
         display: inline-block;
-margin-right: 0.9rem;
+        margin-right: 0.9rem;
     }
     li.slick-active {
         border-bottom: 4px solid;
@@ -134,6 +134,31 @@ margin-right: 0.9rem;
 }
 }
 
+section#block-views-block-timeline-block-1 {
+    ul.slick-dots{
+        list-style: none;
+        padding-bottom: 0.5rem;
+        margin-left: 0;
+        li{
+            padding: 0.4rem 0 0 0;
+            width: 10px;
+            text-align: center;
+            display: inline-block;
+    margin-right: 0.9rem;
+        }
+        li.slick-active {
+            border-bottom: 4px solid;
+        }
+    }
+    .field-name-field-titulo {
+        font-weight: 700;
+    }
+    .slick-track {
+        border-bottom: 1px solid;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+    }
+}
 .mapa{
     iframe { 
         -webkit-filter: grayscale(100%);
@@ -150,15 +175,17 @@ margin-right: 0.9rem;
     .project {
         position: relative;
         margin-bottom: 2rem;
-        &:after{
-			position: absolute;
-			left: 0;
-			top: 0;
-			width: 100%;
-			height: 100%;
-            background: rgba(0, 0, 0, 0.3);
-            transition: ease all 0.4s;
-            content: "";
+        a{
+            &:after{
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.3);
+                transition: ease all 0.4s;
+                content: "";
+            }
         }
         &:hover{
             cursor: pointer;
@@ -190,6 +217,49 @@ margin-right: 0.9rem;
 }
 
 //Estudio
+.node--type-proyecto{
+    .field-name-body{
+        padding: 0 13rem;
+        
+        @media screen and (max-width: 600px){
+            padding: 0;
+        }
+    }
+    .field-group-tabs-wrapper{
+        .horizontal-tabs{
+            margin: 3rem auto; 
+            padding: 0 13rem;
+        
+        @media screen and (max-width: 600px){
+            padding: 0;
+        }
+        .horizontal-tabs-panes .horizontal-tabs-pane {
+            padding: 0;
+            border: 0;
+            background-color: unset;
+        }
+        }
+    }
+}
+section#block-views-block-proyectos-block-2{
+    .title-proyecto {
+        display: block;
+        h1 {
+            display: inline-block;
+            margin-right: 2rem;
+        }
+        .fecha {
+            display: inline-block; 
+            margin-right: 1rem;
+            font-weight: 600;
+        }
+        .ciudad {
+            display: inline-block;
+        }
+    }
+    }
+    
+
 
 .section-el-estudio, .section-nuestra-aproximacion, .section-academia, .section-contacto{
     main#main {
@@ -211,7 +281,33 @@ margin-right: 0.9rem;
         }
     }
 }
-
+section#block-video{
+    padding-left:  15rem;
+    padding-right:  15rem;
+    margin-left: 1.2rem; 
+        
+        @media screen and (max-width: 600px){
+            padding-left: 0rem;
+            padding-right: 0rem;
+            margin-left: 0;
+        }
+        h2.block-title {
+            padding-left: 0rem;
+            padding-right: 0.9rem;
+            margin-bottom: 2rem;
+        }
+}
+section#block-academiablock{
+    padding-left:  15rem;
+    padding-right:  15rem;
+    margin-left: 1.2rem;
+        
+        @media screen and (max-width: 600px){
+            padding-left: 0rem;
+            padding-right: 0rem;
+            margin-left: 0;
+}
+}
 nav#block-redes-3{
         a{
             padding: 0.7rem 1rem 0.7rem 0;
@@ -224,4 +320,190 @@ nav#block-redes-3{
             font-weight: 700;
             font-size: 1.2rem;
         }
+    }
+
+    .horizontal-tabs, {
+        border: 0px solid #ccc;
+
+        .horizontal-tabs-list {
+            display: inline-block;
+            margin-bottom: 2rem;
+            border: 0;
+            padding: 0;
+            list-style: none;
+            background-color: #fff;
+            border-bottom: 0px solid #ccc;
+            width: 100%;
+            height: auto;
+            clear: both;
+            .horizontal-tab-button.selected {
+                background-color: #fff;
+                border-bottom: 4px solid #000;
+                margin-bottom: -1px;
+                strong{
+                    font-weight: bold;
+                    line-height: inherit;
+                }
+            }
+            .horizontal-tab-button {
+                background: #fff;
+                border-right: 0px solid #ccc;
+                padding-top: 0;
+                margin: 0;
+                min-width: 5em;
+                float: left;
+                strong{
+                    font-weight: 400;
+                    line-height: inherit;
+                }
+            }
+        
+         .horizontal-tabs-pane {
+            padding: 0;
+            border: 0;
+        }
+    }
+}
+        .vertical-tabs{
+            margin: 1em 0 3em 15em;
+            .vertical-tabs__menu-item {
+                border: 0px solid #ccc;
+                border-top: 0;
+                background: #fff;
+                strong {
+                    font-weight: 400;
+                    line-height: inherit; 
+                }
+            }
+            li.vertical-tabs__menu-item.is-selected{
+               
+                strong {
+                    font-weight: 400;
+                    line-height: inherit; 
+                    border-bottom: 4px solid #000;
+                    padding-bottom: 0.3rem;
+                }
+            }
+        }
+        .vertical-tabs__menu {
+            border-top: 0px solid #ccc;
+        }
+
+.owl-theme .owl-controls {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.owl-theme .owl-controls .owl-page span.owl-numbers {
+    height: auto;
+    width: auto;
+    color: #000;
+    padding: 2px 10px;
+    font-size: 12px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 0px;
+}
+.owl-theme .owl-controls .owl-page span {
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin: 5px 0px;
+    filter: Alpha(Opacity=0);
+    opacity: 0.5;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background: #fff;
+}
+
+.owl-page.active{
+    border-bottom: 4px solid #000;
+}
+
+.ui-widget-overlay {
+    background: #ffffff/*{bgColorOverlay}*/ /*{bgImgUrlOverlay}*/ /*{bgOverlayXPos}*/ /*{bgOverlayYPos}*/ /*{bgOverlayRepeat}*/;
+    opacity: 1;
+}
+.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front {
+    width: 100% !important;
+}
+.ui-widget.ui-widget-content {
+    border: 0px solid #c5c5c5;
+}
+.ui-widget-header {
+    border: 0px solid #dddddd;
+    background: #fff;
+    color: #333;
+}
+.ui-dialog .ui-dialog-title {
+    display: none;
+}
+
+
+.ui-widget-content{
+   .field-node--node-title{
+        h2 {
+            margin-bottom: 0;
+        }
+    }
+  
+    .field-wrapper.field.field-node--field-cargo.field-name-field-cargo.field-type-entity-reference.field-label-hidden {
+        margin-bottom: 1rem;
+    }
+}
+.ui-dialog-titlebar-close {
+    position: absolute;
+    right: 7%;
+    top: 50%;
+    width: 40px;
+    margin: -10px 0 0 0;
+    padding: 1px;
+    height: 40px;
+    border: 0px;
+    background: none;
+}
+.ui-button-icon-only .ui-icon {
+    position: absolute;
+    top: -8px;
+    left: -4rem;
+    margin-top: -8px;
+    margin-left: -8px;
+}
+.ui-button .ui-icon {
+    background-image: url(/themes/custom/pacheco/images/close.png) !important;
+}
+.ui-icon {
+    width: 40px;
+    height: 40px;
+}
+.ui-icon-closethick {
+    background-position: center;
+}
+.ui-widget .ui-widget {
+    font-size: 0em;
+}
+ .ui-button {
+    color: #ffffff/*{fcDefault}*/ !important;
+    text-decoration: none;
+}
+.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front{
+    font-family: $body-font-family;
+}
+button{
+    outline:none;
+}
+a {
+    outline: none;
+    &:hover{
+        outline: none;
+    }
+    &:focus{
+        outline: none;
+    }
+    }
+
+    .vertical-tabs__menu-item a:hover {
+        outline: 0px dotted;
+        text-decoration: none;
     }

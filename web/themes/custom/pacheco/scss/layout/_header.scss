@@ -82,14 +82,35 @@ div#menu-hamburger {
 	}
 	.slide {
 		position: relative;
-		&:after{
-			position: absolute;
-			left: 0;
-			top: 0;
-			width: 100%;
-			height: 100%;
-			background: rgba(0, 0, 0, 0.3);
-			content: "";
-		}
+a{
+	&:after{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.3);
+		content: "";
 	}
+}
+	}
+}
+
+.lightgallery-link {
+    text-align: center;
+	margin: 2rem auto;
+a#lightgallery-start-fotos, a#lightgallery-start-esquemas, a#lightgallery-start-planos, a#lightgallery-start-referentes {
+	font-weight: 600;
+	position: relative;
+	&:after{
+		right: -28px;
+		top: 0;
+		content: "";
+		background-image: url(../images/expand.png);
+		background-size: contain;
+		width: 20px;
+		height: 20px;
+		position: absolute;
+	}
+}
 }
