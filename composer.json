@@ -50,6 +50,7 @@
         "drupal/responsive_menu": "^4.1",
         "drupal/slick_extras": "^1.0@RC",
         "drupal/views_slideshow": "^4.7",
+        "drupal/webform": "^5.19",
         "drupal/zurb_foundation": "^6.0",
         "sachinchoolur/lightgallery": "^1.2"
     },
