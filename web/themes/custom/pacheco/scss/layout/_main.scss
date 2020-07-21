@@ -1,37 +1,60 @@
 .l-main {
     padding-left: 4.5rem;
     @media screen and (max-width: 600px) {
-        padding-left: 1rem;
+        padding-left: 0.7rem;
+        padding-top: 6rem;
+        padding-right: 0.7rem;
+    }
+}
+.path-frontpage{
+    .l-main {
+        padding-left: 4.5rem;
+        @media screen and (max-width: 600px) {
+            padding-left: 0rem;
+            padding-top: 6rem;
+            padding-right: 0.7rem;
+        }
+    }
+}
+.section-proyectos {
+    .l-main {
+        padding-left: 4.5rem;
+        @media screen and (max-width: 600px) {
+            padding-left: 1.4rem;
+            padding-top: 6rem;
+            padding-right: 0.7rem;
+        }
     }
 }
  div#sub-content-second  {
     padding-left: 6.2rem;
     @media screen and (max-width: 600px) {
-        padding-left: 1rem;
+        padding-left: inherit;
     }
 }
 div#footer-first {
     padding-left: 3.2rem;
     @media screen and (max-width: 600px) {
-        padding-left: 1rem;
+        padding-left: inherit;
     }
 }
 .row.web {
     padding-left: 3.2rem;
     @media screen and (max-width: 600px) {
-        padding-left: 1rem;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
     }
 }
 section#block-mapacontacto {
     padding-left: 3.2rem;
     @media screen and (max-width: 600px) {
-        padding-left: 1rem;
+        padding-left: inherit;
     }
 }
 section#block-views-block-timeline-block-1{
     padding-left: 3.2rem;
     @media screen and (max-width: 600px) {
-        padding-left: 1rem;
+        padding-left: inherit;
     }
 }
 .vertical-tabs {
@@ -40,7 +63,7 @@ section#block-views-block-timeline-block-1{
 section#block-views-block-proyectos-block-2{
     padding-left: 13rem;
     @media screen and (max-width: 600px) {
-        padding-left: 1rem;
+        padding-left: inherit;
     }
 }
 .node--type-proyecto{

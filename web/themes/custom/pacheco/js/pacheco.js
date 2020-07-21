@@ -42,6 +42,13 @@
       /************************
       *FIN GALERIAS PROYESTOS;*
       *************************/
+      relocateView();
+      function relocateView() {
+          if ($(window).width() < 640) {
+          }else{
+              $('#block-formularioexpuestoproyectospage-1 details').attr('open', '');
+          }
+      }
     }
   };
 
