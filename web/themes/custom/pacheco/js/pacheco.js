@@ -20,9 +20,10 @@
       *GALERIAS PROYESTOS;*
       *********************/
       //FOTOS
-/*      $('#lightgallery-start-fotos, .field-name-field-galeria img', context).once('pacheco').on('click',function(e){
-        e.preventDefault();
-        $(".gallery-lightgallery .lightgallery-wrapper:nth-child(2) a > img").first().trigger("click");
+      $('#lightgallery-start-fotos, .field-name-field-galeria img', context).once('pacheco').on('click',function(e){
+        $('.gallery-lightgallery .lightgallery-wrapper').eq(0).find('a > img').trigger("click")
+        //e.preventDefault();
+        //$(".gallery-lightgallery .lightgallery-wrapper:nth-child(2) a > img").first().trigger("click");
       });
       //ESQUEMAS
       $('#lightgallery-start-esquemas, .field-name-field-galeria-esquemas img', context).once('pacheco').on('click',function(e){
@@ -38,7 +39,7 @@
       $('#lightgallery-start-referentes, .field-name-field-galeria-referentes img', context).once('pacheco').on('click',function(e){
         e.preventDefault();
         $(".gallery-lightgallery .lightgallery-wrapper:nth-child(5) a > img").first().trigger("click");
-      });*/
+      });
       /************************
       *FIN GALERIAS PROYESTOS;*
       *************************/
