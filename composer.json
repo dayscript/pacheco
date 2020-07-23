@@ -35,6 +35,7 @@
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
+        "drupal/dropdown_language": "^2.6",
         "drupal/field_formatter_class": "^1.4",
         "drupal/fontyourface": "^3.2",
         "drupal/image_slider": "^1.2",
