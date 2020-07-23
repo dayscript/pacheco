@@ -411,12 +411,11 @@ nav#block-redes-3{
 .vertical-tabs{
     @media screen and (max-width: 600px){
         margin: 0em;
-        //margin: 1em 0 3em 15em;
     }
     .vertical-tabs__menu{
         @media screen and (max-width: 600px){
             margin: 0em;
-            //margin: -1px 0 -1px -15em; 
+            width: 100%;
         }
     }
     .vertical-tabs__menu-item {
