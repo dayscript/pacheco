@@ -20,7 +20,7 @@
       *GALERIAS PROYESTOS;*
       *********************/
       //FOTOS
-      $('#lightgallery-start-fotos, .field-name-field-image img', context).once('pacheco').on('click',function(e){
+      $('#lightgallery-start-fotos, .field-name-field-galeria img', context).once('pacheco').on('click',function(e){
         e.preventDefault();
         $(".gallery-lightgallery .lightgallery-wrapper:nth-child(2) a > img").first().trigger("click");
       });
