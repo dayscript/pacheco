@@ -410,12 +410,12 @@ nav#block-redes-3{
 }
 .vertical-tabs{
     margin: 0em;
-    @media screen and (max-width: 600px){
+    @media screen and (min-width: 600px){
         margin: 1em 0 3em 15em;
     }
     .vertical-tabs__menu{
         margin: 0em;
-        @media screen and (max-width: 600px){
+        @media screen and (min-width: 600px){
             margin: 1em 0 3em 15em;
         }
     }
@@ -423,7 +423,7 @@ nav#block-redes-3{
         border: 0px solid #ccc;
         border-top: 0;
         background: #fff;
-        @media screen and (max-width: 600px){
+        @media screen and (min-width: 600px){
             display: inline-block;
             margin-bottom: 1rem;
         }
