@@ -36,7 +36,6 @@
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
         "drupal/field_formatter_class": "^1.4",
-        "drupal/field_group": "3.0",
         "drupal/fontyourface": "^3.2",
         "drupal/image_slider": "^1.2",
         "drupal/lightgallery": "^1.1",

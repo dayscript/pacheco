@@ -1,0 +1,39 @@
+diff --git a/src/Plugin/field_group/FieldGroupFormatter/Tabs.php b/src/Plugin/field_group/FieldGroupFormatter/Tabs.php
+index de6b562..2b07672 100644
+--- a/src/Plugin/field_group/FieldGroupFormatter/Tabs.php
++++ b/src/Plugin/field_group/FieldGroupFormatter/Tabs.php
+@@ -54,6 +54,10 @@ class Tabs extends FieldGroupFormatterBase {
+       '#theme_wrappers' => [$this->getSetting('direction') . '_tabs'],
+     ];
+ 
++    // Add auto-disable breakpoint.
++    if ($width_breakpoint = $this->getSetting('width_breakpoint')) {
++      $element['#attached']['drupalSettings']['widthBreakpoint'] = $width_breakpoint;
++    }
+   }
+ 
+   /**
+@@ -99,6 +103,15 @@ class Tabs extends FieldGroupFormatterBase {
+       '#weight' => 1,
+     ];
+ 
++    $form['width_breakpoint'] = [
++      '#title' => $this->t('Width Breakpoint'),
++      '#description' => $this->t('Auto-disable the Tabs widget if the window width is equal or smaller than this breakpoint.'),
++      '#type' => 'number',
++      '#default_value' => $this->getSetting('width_breakpoint'),
++      '#weight' => 2,
++      '#min' => 0,
++    ];
++
+     return $form;
+   }
+ 
+@@ -121,6 +134,7 @@ class Tabs extends FieldGroupFormatterBase {
+   public static function defaultContextSettings($context) {
+     return [
+       'direction' => 'vertical',
++      'width_breakpoint' => 640,
+     ] + parent::defaultContextSettings($context);
+   }
+ 
