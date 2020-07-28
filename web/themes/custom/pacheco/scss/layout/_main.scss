@@ -70,7 +70,7 @@ section#block-views-block-proyectos-block-2{
     section#block-pacheco-breadcrumbs {
         padding-left: 1rem;
         @media screen and (max-width: 600px) {
-            padding-left: 1rem;
+            padding-left: 0rem;
         }
     }
 }
@@ -96,4 +96,43 @@ section#block-proyectostitle {
 section#block-noticiastitle {
     padding-left: 0.7rem;
 }
+}
+
+.vertical-tabs__menu-item a {
+    @media screen and (max-width: 600px){
+         padding: 0.5em 0.6em 0.5em 0;
+    }
+}
+
+section#block-dropdownlanguage {
+    top: 9rem;
+    position: fixed;
+    width: 5rem;
+    .dropbutton-wrapper {
+        background-color: transparent;
+    }
+    .dropbutton-arrow {
+        position: absolute;
+        top: 50%;
+        right: 40%;
+        display: block;
+        overflow: hidden;
+        width: 0;
+        height: 0;
+        margin-top: -0.1666em;
+        border-width: 0.3333em 0.3333em 0;
+        border-style: none;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        line-height: 0;
+    }
+    li.es.dropbutton-action {
+        cursor: pointer;
+    }
+    ul.dropdown-language-item.dropbutton {
+        border-bottom: 5px solid;
+    width: 15px;
+    font-size: 0.8rem;
+    }
 }

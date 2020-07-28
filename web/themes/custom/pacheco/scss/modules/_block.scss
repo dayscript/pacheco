@@ -69,6 +69,11 @@ section#block-views-block-noticias-block-1, section#block-views-block-noticias-b
     .form-checkboxes {
         margin-bottom: 1rem;
     }
+    label.option {
+        font-size: 0.8rem;
+        margin-left: 0.3rem;
+        margin-right: 0.3rem;
+    }
 }
 .section-proyectos{
     #block-pacheco-breadcrumbs, #block-pacheco-page-title {
@@ -100,6 +105,12 @@ div#slick-views-proyectos-block-1-2-slider{
     }
 
 }
+section#block-marcadelsitio {
+    &.medium-offset-9 {
+        margin-left: 72%;
+    }
+}
+
 section#block-views-block-proyectos-block-1{
     ul.slick-dots{
             list-style: none;
@@ -231,8 +242,9 @@ section#block-views-block-timeline-block-1 {
             font-size: 0.6rem;
         }
         h2 {
-            font-size: 1.1rem;
+            font-size: 1rem;
             margin-bottom: 0;
+            padding-left: 1rem;
             a{
                 color: $white; 
             }
@@ -242,7 +254,7 @@ section#block-views-block-timeline-block-1 {
 
 //Estudio
 .node--type-proyecto{
-    .field-name-body{
+    .textos{
         padding: 0 13rem;
         
         @media screen and (max-width: 600px){
