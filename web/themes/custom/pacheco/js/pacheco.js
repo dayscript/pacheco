@@ -22,22 +22,22 @@
       //FOTOS
       $('#lightgallery-start-fotos, .field-name-field-galeria img', context).once('pacheco').on('click',function(e){
         e.preventDefault();
-        $('.gallery-lightgallery .lightgallery-wrapper').eq(0).find('a > img').trigger("click")
+        $('.galeria-fotos .lightgallery-wrapper a > img').first().trigger("click")
       });
       //ESQUEMAS
       $('#lightgallery-start-esquemas, .field-name-field-galeria-esquemas img', context).once('pacheco').on('click',function(e){
         e.preventDefault();
-        $('.gallery-lightgallery .lightgallery-wrapper').eq(1).find('a > img').trigger("click")
+        $('.galeria-esquemas .lightgallery-wrapper a > img').first().trigger("click")
       });
       //PLANOS
       $('#lightgallery-start-planos, .field-name-field-galeria-planos img', context).once('pacheco').on('click',function(e){
         e.preventDefault();
-        $('.gallery-lightgallery .lightgallery-wrapper').eq(2).find('a > img').trigger("click")
+        $('.galeria-planos .lightgallery-wrapper a > img').first().trigger("click")
       });
       //REFERENTES
       $('#lightgallery-start-referentes, .field-name-field-galeria-referentes img', context).once('pacheco').on('click',function(e){
         e.preventDefault();
-        $('.gallery-lightgallery .lightgallery-wrapper').eq(3).find('a > img').trigger("click")
+        $('.galeria-referentes .lightgallery-wrapper a > img').first().trigger("click")
       });
       /************************
       *FIN GALERIAS PROYESTOS;*
