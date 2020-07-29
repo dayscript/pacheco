@@ -16,10 +16,10 @@
         $('.loading-style').show('slow');;
         setTimeout(function() {
           $('.loading-style').hide('slow');
-          }, 4000);  // 4 seconds
+          }, 9000);  // 4 seconds
         setTimeout(function() {
           $('#loading').addClass('hidden');
-          }, 5000);  // 5 seconds
+          }, 10000);  // 5 seconds
       }
       
       //alert("I'm alive!");
