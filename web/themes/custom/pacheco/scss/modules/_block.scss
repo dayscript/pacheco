@@ -331,6 +331,12 @@ section#block-views-block-proyectos-block-2{
         }
     }
 }
+.section-el-estudio section#block-pacheco-breadcrumbs{
+    padding: 0 12rem !important;
+    @media screen and (max-width: 600px){
+        padding: 0;
+    } 
+}
 section#block-webform {
     padding: 1rem 15.3rem;
     @media screen and (max-width: 600px){

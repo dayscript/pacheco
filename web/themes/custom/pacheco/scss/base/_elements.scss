@@ -139,6 +139,17 @@ a.ckeditor-readmore-toggler{
     margin-bottom: 2rem;
     }
 }
+p, .description, .views-field-body {
+    
+    font-size: 14px !important;
+    line-height: 1.6em !important;
+}
+section#block-dropdownlanguage-2 {
+    display: none;
+}
+ul.links.inline {
+    display: none;
+} 
 // Anchors
 //-----------------------------------------------------------------------------
 // a {}

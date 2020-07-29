@@ -88,7 +88,8 @@ section#block-proyectostitle {
     }
 
 .views-row {
-    min-height: 210px;
+    min-height: 230px;
+    margin-bottom: 1rem;
     @media screen and (max-width: 600px){
         min-height: auto;
     }
