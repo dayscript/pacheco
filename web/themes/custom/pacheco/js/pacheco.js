@@ -10,6 +10,14 @@
    */
   Drupal.behaviors.pacheco = {
     attach: function (context, settings) {
+      if ($("body").hasClass("user-logged-in")) {
+        $('#loading').addClass('hidden');
+      }else{
+        setTimeout(function() {
+          $('#loading').addClass('hidden');
+          }, 5000);  // 5 seconds
+      }
+      
       //alert("I'm alive!");
       $('#menu-hamburger .hamburger', context).once('pacheco').on('click',function(e){
       	$(this).toggleClass('is-active').closest('body').toggleClass('overflow-hidden');
