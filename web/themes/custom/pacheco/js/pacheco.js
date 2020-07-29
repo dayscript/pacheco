@@ -10,17 +10,28 @@
    */
   Drupal.behaviors.pacheco = {
     attach: function (context, settings) {
-      if ($("body").hasClass("user-logged-in")) {
-        $('#loading').addClass('hidden');
+      /***********************
+      *loading once per visit*
+      ************************/
+      if (!sessionStorage.getItem('doNotShow')){
+          sessionStorage.setItem('doNotShow', true);
+          if ($("body").hasClass("user-logged-in")) {
+            $('#loading').addClass('hidden');
+          }else{
+            $('.loading-style').show('slow');
+            setTimeout(function() {
+              $('.loading-style').hide('slow');
+              }, 9000);  // 9 seconds
+            setTimeout(function() {
+              $('#loading').addClass('hidden');
+              }, 10000);  // 10 seconds
+          }
       }else{
-        $('.loading-style').show('slow');;
-        setTimeout(function() {
-          $('.loading-style').hide('slow');
-          }, 9000);  // 4 seconds
-        setTimeout(function() {
-          $('#loading').addClass('hidden');
-          }, 10000);  // 5 seconds
+        $('#loading').addClass('hidden');
       }
+      /*****************************
+      *END - loading once per visit*
+      ******************************/
       
       //alert("I'm alive!");
       $('#menu-hamburger .hamburger', context).once('pacheco').on('click',function(e){
