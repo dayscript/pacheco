@@ -67,6 +67,10 @@ section#block-logopacheco {
     img{
         height: 60%;
     }
+    @media screen and (max-width: 600px){
+        min-height: 110px;
+        padding-left: 1.4rem;
+    }
 }
 section#block-copyright {
     margin-top: 8px;
@@ -78,4 +82,8 @@ section#block-footermobile {
     font-size: 0.75rem;
     padding: 0.4rem;
     }
+}
+h2#block-seccionesm-menu {
+    padding-left: 0;
+    margin-bottom: 0.5rem;
 }

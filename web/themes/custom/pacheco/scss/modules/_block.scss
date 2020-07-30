@@ -319,7 +319,7 @@ section#block-views-block-proyectos-block-2{
             padding: 0;
         }
     }
-    section#block-pacheco-breadcrumbs, section#block-pacheco-page-title {
+    section#block-pacheco-page-title {
         padding: 0 13rem;
         @media screen and (max-width: 600px){
             padding: 0;
@@ -330,13 +330,20 @@ section#block-views-block-proyectos-block-2{
             padding: 0rem;
         }
     }
+    section#block-pacheco-breadcrumbs{
+        padding: 0 13rem !important;
+        @media screen and (max-width: 600px){
+            padding: 0;
+        } 
+    }
 }
-.section-el-estudio section#block-pacheco-breadcrumbs{
-    padding: 0 12rem !important;
-    @media screen and (max-width: 600px){
-        padding: 0;
-    } 
+.pl{
+padding-left: 0.9rem;
+@media screen and (max-width: 600px){
+    padding: 0;
+} 
 }
+
 section#block-webform {
     padding: 1rem 15.3rem;
     @media screen and (max-width: 600px){
