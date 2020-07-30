@@ -68,6 +68,11 @@
       relocateView();
       function relocateView() {
           if ($(window).width() < 640) {
+            $('#menu-hamburger', context).once('pacheco').on('click',function(e){
+              $('#block-marcadelsitio').toggleClass("hidden")
+              $('#full-page-menu').css("z-index", "0")
+              $('.header').toggleClass("nopadding")
+            });
           }else{
               $('#block-formularioexpuestoproyectospage-1 details').attr('open', '');
           }
