@@ -11,6 +11,9 @@
 	height: 100%;
 	padding: 3rem;
 	z-index: 1;
+	@media screen and (max-width: 600px){
+		padding: 3rem 1.8rem 1rem 1.8rem;
+	}
 	nav#block-navegacionprincipal {
 		position: absolute;
 		top: 50%;
@@ -91,6 +94,11 @@ header.topheader {
 		h2{
 			font-size: 1.2rem;
 			margin-bottom: 0;
+		}
+		@media screen and (max-width: 600px){
+			text-align: right;
+			right: 1rem;
+			padding-left: 1rem;
 		}
 	}
 	.slide {

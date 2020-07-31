@@ -21,10 +21,10 @@
             $('.loading-style').show('slow');
             setTimeout(function() {
               $('.loading-style').hide('slow');
-              }, 9000);  // 9 seconds
+              }, 4000);  // 4 seconds
             setTimeout(function() {
               $('#loading').addClass('hidden');
-              }, 10000);  // 10 seconds
+              }, 5000);  // 5 seconds
           }
       }else{
         $('#loading').addClass('hidden');

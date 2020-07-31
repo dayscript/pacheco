@@ -214,6 +214,7 @@ section#block-views-block-timeline-block-1 {
         position: relative;
         margin-bottom: 2rem;
         a{
+            cursor: pointer;
             &:after{
                 position: absolute;
                 left: 0;
@@ -224,14 +225,15 @@ section#block-views-block-timeline-block-1 {
                 transition: ease all 0.4s;
                 content: "";
             }
-        }
-        &:hover{
-            cursor: pointer;
-            &:after{
-                background: rgba(0, 0, 0, 0.6);
-                transition: ease all 0.4s; 
+            &:hover{
+                cursor: pointer;
+                &:after{
+                    background: rgba(0, 0, 0, 0.9); 
+                    transition: ease all 0.4s; 
+                }
             }
         }
+
     }
     .info {
         position: absolute;
@@ -336,7 +338,7 @@ section#block-views-block-proyectos-block-2{
     section#block-pacheco-breadcrumbs{
         padding: 0 13rem !important;
         @media screen and (max-width: 600px){
-            padding: 0;
+            padding: 0 !important;
         } 
     }
 }
@@ -585,7 +587,7 @@ nav#block-redes-3{
 button{
     outline:none;
 }
-a {
+summary,a{
     outline: none;
     &:hover{
         outline: none;
@@ -593,31 +595,41 @@ a {
     &:focus{
         outline: none;
     }
-    }
+}
+.vertical-tabs__menu-item a:hover {
+    outline: 0px dotted;
+    text-decoration: none;
+}
 
-    .vertical-tabs__menu-item a:hover {
-        outline: 0px dotted;
-        text-decoration: none;
+.vertical-tabs__menu-item a:focus .vertical-tabs__menu-item-title,
+.vertical-tabs__menu-item a:active .vertical-tabs__menu-item-title,
+.vertical-tabs__menu-item a:hover .vertical-tabs__menu-item-title {
+  text-decoration: none;
+}
+
+.date.field-wrapper.field.field-node--field-fecha.field-name-field-fecha.field-type-datetime.field-label-hidden.quickedit-field {
+    .field-item {
+        margin-bottom: 1rem;
     }
-    .date.field-wrapper.field.field-node--field-fecha.field-name-field-fecha.field-type-datetime.field-label-hidden.quickedit-field {
-        .field-item {
-            margin-bottom: 1rem;
+}
+nav#block-redes-3 {
+    margin-bottom: 2rem;
+}
+
+section#block-views-block-blocks-equipo-block-1 {
+    @media screen and (max-width: 600px){
+        .more {
+            margin-bottom: 2rem;
         }
     }
-    nav#block-redes-3 {
-        margin-bottom: 2rem;
+} 
+section#block-equipotitle {
+    margin-left: 16.6667%;
+    @media screen and (max-width: 600px){
+        margin-left: auto;
     }
-    
-    section#block-views-block-blocks-equipo-block-1 {
-        @media screen and (max-width: 600px){
-            .more {
-                margin-bottom: 2rem;
-            }
-        }
-    } 
-    section#block-equipotitle {
-        margin-left: 16.6667%;
-        @media screen and (max-width: 600px){
-            margin-left: auto;
-        }
-    }
+}
+
+.ui-widget-overlay.ui-front{
+    z-index: 1;
+}
