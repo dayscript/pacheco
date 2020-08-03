@@ -181,6 +181,10 @@ ul.links.inline {
 .ajax-progress{
     display: none;
 }
+.ui-widget .ui-widget{
+    background: none;
+    border: none;
+}
 // Anchors
 //-----------------------------------------------------------------------------
 // a {}
