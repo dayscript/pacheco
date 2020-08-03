@@ -30,6 +30,8 @@
         "composer/installers": "^1.2",
         "drupal/adminimal_admin_toolbar": "^1.11",
         "drupal/adminimal_theme": "^1.5",
+        "drupal/animate_css": "^1.1",
+        "drupal/animations": "^1.2",
         "drupal/block_class": "^1.2",
         "drupal/ckeditor_readmore": "1.x-dev",
         "drupal/core-composer-scaffold": "^8.8",

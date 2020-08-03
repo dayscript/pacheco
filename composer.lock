@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9f66ab1bb36885266e1f5f7106035ad9",
+    "content-hash": "4c70aa3aaa49837f1adf88405a5dc361",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -824,6 +824,116 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/adminimal_theme",
                 "issues": "https://www.drupal.org/project/issues/adminimal_theme"
+            }
+        },
+        {
+            "name": "drupal/animate_css",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/animate_css.git",
+                "reference": "3563c25844fc5cf1a2b7985d04dd5ccca1414b57"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.2+5-dev",
+                    "datestamp": "1584446407",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "djalxs",
+                    "homepage": "https://www.drupal.org/user/3359162"
+                },
+                {
+                    "name": "pranav73",
+                    "homepage": "https://www.drupal.org/user/3544129"
+                },
+                {
+                    "name": "rahulbile",
+                    "homepage": "https://www.drupal.org/user/339798"
+                },
+                {
+                    "name": "revati_gawas",
+                    "homepage": "https://www.drupal.org/user/3544132"
+                }
+            ],
+            "description": "Animate CSS is a bunch of cool, fun, and cross-browser animations for you to use in your projects.",
+            "homepage": "https://www.drupal.org/project/animate_css",
+            "support": {
+                "source": "https://git.drupalcode.org/project/animate_css"
+            },
+            "time": "2020-03-17T11:59:48+00:00"
+        },
+        {
+            "name": "drupal/animations",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/animations.git",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/animations-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "cf9a096027540f42928ebbe9ef3a9df12b6fbbca"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1498555743",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ivo.Radulovski",
+                    "homepage": "https://www.drupal.org/user/337498"
+                },
+                {
+                    "name": "Todor Nikolov",
+                    "homepage": "https://www.drupal.org/user/3560916"
+                },
+                {
+                    "name": "a.sotirov",
+                    "homepage": "https://www.drupal.org/user/3517190"
+                },
+                {
+                    "name": "d.popov",
+                    "homepage": "https://www.drupal.org/user/3483757"
+                }
+            ],
+            "description": "Add all sorts of animations to custom css classes",
+            "homepage": "https://www.drupal.org/project/animations",
+            "support": {
+                "source": "https://git.drupalcode.org/project/animations"
             }
         },
         {
