@@ -525,6 +525,8 @@ nav#block-redes-3{
 }
 
 .owl-theme .owl-controls {
+    position: absolute;
+    top: 401px;
     margin-top: 10px;
     text-align: left;
 }
@@ -685,5 +687,5 @@ section#block-equipotitle {
 }
 
 .field-paragraph--field-descripcion-conferencias{
-    margin-top: 1rem;
+    margin-top: 5rem;
 }
