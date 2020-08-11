@@ -69,6 +69,7 @@
       /********************
       *GALERIAS ACADEMIA;*
       *********************/
+      $('.conferencias .owl-item .paragraph').closest('.horizontal-tabs').addClass("hidden");
       setTimeout(function() {
         $(".conferencias .owl-carousel").data('owlCarousel').reinit({
             autoHeight : true,
