@@ -65,6 +65,17 @@
       /************************
       *FIN GALERIAS PROYESTOS;*
       *************************/
+
+      /********************
+      *GALERIAS ACADEMIA;*
+      *********************/
+      $(".conferencias .owl-carousel").data('owlCarousel').reinit({
+          autoHeight : true,
+      });
+      /********************
+      *FIN GALERIAS ACADEMIA;*
+      *********************/
+      
       relocateView();
       function relocateView() {
           if ($(window).width() < 640) {
