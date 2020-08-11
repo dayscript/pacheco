@@ -69,9 +69,11 @@
       /********************
       *GALERIAS ACADEMIA;*
       *********************/
-      $(".conferencias .owl-carousel").data('owlCarousel').reinit({
-          autoHeight : true,
-      });
+      setTimeout(function() {
+        $(".conferencias .owl-carousel").data('owlCarousel').reinit({
+            autoHeight : true,
+        });
+        }, 1000);  // 1 second
       /********************
       *FIN GALERIAS ACADEMIA;*
       *********************/
