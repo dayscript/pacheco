@@ -91,8 +91,10 @@
           }else{
               $('#block-formularioexpuestoproyectospage-1 details').attr('open', '');
           }
-          var heightImg = $('.conferencias .owl-carousel .owl-item img').height()
-          $('.conferencias .owl-theme .owl-controls').css({'top': heightImg+'px', 'position': 'absolute'})
+          setTimeout(function() {
+            var heightImg = $('.conferencias .owl-carousel .owl-item img').height()
+            $('.conferencias .owl-theme .owl-controls').css({'top': heightImg+'px', 'position': 'absolute'})
+            }, 1000);  // 1 second
       }
     }
   };
