@@ -1,6 +1,12 @@
 .nopadding{
     padding: 0;
 }
+.mt-1{
+    margin-top: 2rem;
+}
+.mt-2{
+    margin-top: 2rem;
+}
 section#block-views-block-noticias-block-1, section#block-views-block-noticias-block-1-2 {
     .views-row {
         min-height: 11rem;
@@ -682,8 +688,4 @@ section#block-equipotitle {
 
 .ui-widget-overlay.ui-front{
     z-index: 1;
-}
-
-.field-paragraph--field-descripcion-conferencias{
-    margin-top: 5rem;
 }

@@ -39,6 +39,7 @@
       	$('#menu-hamburger').toggleClass('closed-right')
       	$('#full-page-menu').toggleClass('hide')
       });
+
       /********************
       *GALERIAS PROYESTOS;*
       *********************/
@@ -66,19 +67,6 @@
       *FIN GALERIAS PROYESTOS;*
       *************************/
 
-      /********************
-      *GALERIAS ACADEMIA;*
-      *********************/
-      $('.section-academia .field-group-tabs-wrapper').removeClass('hidden')
-      setTimeout(function() {
-        $(".conferencias .owl-carousel").data('owlCarousel').reinit({
-            autoHeight : true,
-        });
-        }, 1000);  // 1 second
-      /********************
-      *FIN GALERIAS ACADEMIA;*
-      *********************/
-      
       relocateView();
       function relocateView() {
           if ($(window).width() < 640) {
@@ -91,10 +79,6 @@
           }else{
               $('#block-formularioexpuestoproyectospage-1 details').attr('open', '');
           }
-          setTimeout(function() {
-            var heightImg = $('.conferencias .owl-carousel .owl-item img').height()
-            $('.conferencias .owl-theme .owl-controls').css({'top': heightImg+'px', 'position': 'absolute'})
-            }, 1000);  // 1 second
       }
     }
   };
