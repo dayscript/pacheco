@@ -40,6 +40,7 @@
         "drupal/dropdown_language": "^2.6",
         "drupal/field_formatter_class": "^1.4",
         "drupal/fontyourface": "^3.2",
+        "drupal/google_analytics": "^3.1",
         "drupal/google_map_field": "^1.13",
         "drupal/image_slider": "^1.2",
         "drupal/lightgallery": "^1.1",
