@@ -222,20 +222,16 @@
   <footer id="page-footer" class="columns">
    <div class="row">
     {% if page.footer_first %}
-    <div id="footer-first" class="medium-5 columns">
+    <div id="footer-first" class="small-2 columns">
       {{ page.footer_first }}
     </div>
   {% endif %}
   {% if page.footer_middle %} 
-    <div id="footer-middle" class="medium-3 columns">
+    <div id="footer-middle" class="small-10 columns">
       {{ page.footer_middle }}
     </div>
   {% endif %}
-  {% if page.footer_last %}
-    <div id="footer-last" class="medium-4 columns">
-      {{ page.footer_last }}
-    </div>
-  {% endif %}
+  
    </div>
   </footer>
 {% endif %} 

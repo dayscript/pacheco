@@ -1,11 +1,28 @@
 #page-footer{
-    padding: 2rem 0;
-    background: $black;
-    color: $white;
+    padding: 2rem 0 1rem 0;
     font-size: 0.75rem;
+    @media screen and (max-width: 600px) {
+        text-align: center;
+      }
     p{
         font-size: 0.8rem !important;
+        @media screen and (max-width: 600px) {
+            font-size: 0.7rem !important;
+          }
 
+    }
+    strong{
+        font-weight: 400;
+        @media screen and (max-width: 600px) {
+            display: block;
+          }
+    }
+    a{
+        color: $black;
+        @media screen and (max-width: 600px) {
+            margin: 0.1rem 0;
+            display: inline-block;
+          }
     }
     @media screen and (max-width: 600px) {
         padding: 3rem 0 1rem 0;
@@ -33,6 +50,11 @@
                 display: inline-block;
                 width: auto;
             }
+        }
+    }
+    .copy{
+        img {
+            padding-bottom: 0.8rem;
         }
     }
     #block-legales{

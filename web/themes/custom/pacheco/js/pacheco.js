@@ -18,9 +18,9 @@
           if ($("body").hasClass("user-logged-in")) {
             $('#loading').addClass('hidden');
           }else{
-            $('.loading-style').show('slow');
+            $('.loading-style').fadeIn();
             setTimeout(function() {
-              $('.loading-style').hide('slow');
+              $('.loading-style').fadeOut();
               }, 4000);  // 4 seconds
             setTimeout(function() {
               $('#loading').addClass('hidden');
@@ -41,7 +41,7 @@
       });
 
       /********************
-      *GALERIAS PROYESTOS;*
+      *GALERIAS PROYECTOS;*
       *********************/
       //FOTOS
       $('#lightgallery-start-fotos, .field-name-field-galeria img', context).once('pacheco').on('click',function(e){
